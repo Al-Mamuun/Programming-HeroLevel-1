@@ -26,3 +26,18 @@
     width: 50%;
     display: inline-block;
 }
+
+.yep{
+    background-image: url('../images/home.png');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: right;
+}
+
+input[type="text"]{
+    color: red;
+}
+
+input[type="email"]{
+    color: blue;
+}
