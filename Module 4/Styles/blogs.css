@@ -1,0 +1,17 @@
+nav li a{
+    text-decoration: none;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav li:hover{
+    background-image: linear-gradient(135deg,rgb(235, 70, 70),rgb(175, 202, 175));
+}
+
+footer{
+    text-align: center;
+}
