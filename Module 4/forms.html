@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="../Module 4/Styles/forms.css">
+</head>
+<body>
+    <header><h1>My Forms</h1></header>
+    <main>
+        <form action="">
+            <fieldset class="bio">
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <input type="checkbox" name="name" id="privacy">
+                <label for="privacy">I agree to the privacy policy</label>
+                <input type="checkbox" name="name" id="terms">
+                <label for="terms">I agree to the terms and conditions</label>
+                <input type="checkbox" name="name" id="newsletter">
+                <label for="newsletter">Subscribe to newsletter</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pitha</legend>
+                <input type="radio" name="pitha" id="pitha1">
+                <label for="pitha1">Pitha 1</label> 
+                <input type="radio" name="pitha" id="pitha2">
+                <label for="pitha2">Pitha 2</label>
+                <input type="radio" name="pitha" id="pitha3">
+                <label for="pitha3">Pitha 3</label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <textarea cols="30" rows="5" id="" placeholder="Here you can add more information about yourself."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Submit</legend>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

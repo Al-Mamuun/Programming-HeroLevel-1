@@ -1,0 +1,135 @@
+/* Google Font-like clean default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+/* Main */
+main {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* Form */
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Fieldset */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Legend */
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #2563eb;
+}
+
+/* Labels */
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Text and Email input */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Focus effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    margin-right: 8px;
+    margin-bottom: 12px;
+}
+
+/* Radio */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+/* Submit & Reset */
+input[type="submit"],
+input[type="reset"] {
+    padding: 11px 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Submit */
+input[type="submit"] {
+    background-color: #2563eb;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+/* Reset */
+input[type="reset"] {
+    background-color: #e5e7eb;
+    color: #333;
+}
+
+input[type="reset"]:hover {
+    background-color: #d1d5db;
+}
