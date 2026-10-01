@@ -6,7 +6,7 @@ nav {
     padding: 10px 20px;
 }
 
-nav ul {
+nav ul{
     display: flex;
     gap: 20px;
     margin: 0;
