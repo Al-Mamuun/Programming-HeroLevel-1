@@ -26,3 +26,10 @@ nav li a {
 nav li:hover {
     background-color: rgb(224, 218, 218);
 }
+
+.footer{
+    background-color: rgb(162, 170, 180);
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+}
