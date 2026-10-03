@@ -1,11 +1,9 @@
-body{
-    background-color: rgb(187, 240, 241);
-    margin: 0 auto;
-}
 .container-banner{
     display: flex;
     align-items: center;
-    gap: 500px;
+    justify-content: center;
+    gap: 50px;
+
     background-color: brown;
     margin: 5px auto;
     padding: 20px;
@@ -13,16 +11,26 @@ body{
     font-size: 1.2rem;
 }
 
+.container-banner > div{
+    width: 40%;
+}
+
 .container-banner img{
-    width: 50%;
+    width: 100%;
     border-radius: 4px;
 }
 
 .container-banner button{
     padding: 10px 20px;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.container-banner button:hover{
+    background-color: white;
+    color: black;
+    border: none;
 }
