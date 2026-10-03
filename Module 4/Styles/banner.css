@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(187, 240, 241);
+    margin: 0 auto;
+}
+.container-banner{
+    display: flex;
+    align-items: center;
+    gap: 500px;
+    background-color: brown;
+    margin: 5px auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.container-banner img{
+    width: 50%;
+    border-radius: 4px;
+}
+
+.container-banner button{
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
