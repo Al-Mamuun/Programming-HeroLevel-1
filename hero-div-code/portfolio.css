@@ -215,3 +215,49 @@ nav{
     margin-top: 50px;
     margin-bottom: 30px;
 }
+
+#resume .section-heading{
+    text-align: center;
+    padding-top: 130px;
+}
+
+.resume-container{
+    width: 71%;
+    max-width: 1200px;
+    margin: 130px auto 20px;
+    display: flex;
+    gap: 24px;
+}
+
+.education, .experience{
+    width: 71%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.education .resume-card, .experience .resume-card{
+    background-color: #FFFFFF;
+    padding: 30px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #E0E0E0;
+    margin: 30px 0;
+}
+
+.card-title{
+    font-size: 20px;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+.card-info, .card-text{
+    font-size: 15px;
+    color: #18181877;
+    margin-bottom: 10px;
+}
