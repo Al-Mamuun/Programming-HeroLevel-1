@@ -163,3 +163,55 @@ nav{
     margin-top: 10px;
 }
 
+.about .about-contain h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: #181818;
+}
+
+.about-contain {
+    text-align: center;
+}
+
+.about .about-contain p {
+    width: 50%;
+    margin: 30px auto 0;
+    font-size: 18px;
+    color: #757575;
+    line-height: 30px;
+}
+
+.card2 {
+    background-color: #FFFFFF;
+    width: 267px;
+    height: 377px;
+    padding: 30px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.card2 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.card2 h2 {
+    font-size: 20px;
+    color: #181818;
+    margin-bottom: 15px;
+}
+
+.card2 p {
+    font-size: 16px;
+    color: #757575;
+    line-height: 28px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
