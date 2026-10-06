@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="portfolio.css" />
   </head>
   <body class="font-open-sans">
@@ -37,8 +38,8 @@
               he. Morning because as to society behaved moments.
             </p>
             <div>
-              <button class="button">Download Cv</button>
-              <button class="button1">Contact</button>
+              <button class="button"><i class="fa-solid fa-download"></i> Download Cv</button>
+              <button class="button1"><i class="fa-solid fa-phone"></i> Contact</button>
             </div>
           </div>
           <div class="banner-image">
@@ -185,7 +186,7 @@
                 commodo ligula eget dolor.
               </p>
             </div>
-            <hr />
+          
           </div>
           <div class="experience">
             <h2 class="section-title">Experience</h2>
@@ -224,10 +225,42 @@
                 commodo ligula eget dolor.
               </p>
             </div>
-            <hr />
+           
           </div>
         </div>
+        <div class="hmm">
+          <button class="button"><i class="fa-solid fa-download"></i> Download Resume</button>
+        </div>
       </section>
+
+      <footer>
+        <div class="footer-container">
+       
+          <div class="footer-info">
+            <h1>Lets Connect</h1>
+            <p>Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p>
+            <div class="social-icons">
+              <a href="http://facebook.com" target="_blank"><img src="images/icons/facebook.png" alt=""></a>
+              <a href="http://facebook.com" target="_blank"><img src="images/icons/twitter.png" alt=""></a>
+              <a href="http://facebook.com" target="_blank"><img src="images/icons/insta.png" alt=""></a>
+            </div>
+          </div>
+
+          <form action="form">
+            <h1>Let's Send Message</h1>
+            <div class="">
+              <input type="text" name="name" id="" placeholder="Your Name" required />
+            </div>
+            <div>
+              <input type="text" name="email" id="" placeholder="Your Email" required />
+            </div>
+            <div>    
+              <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            </div>
+            <input type="submit" value="Send Message" class="button" />
+          </form>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

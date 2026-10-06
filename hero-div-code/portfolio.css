@@ -14,7 +14,7 @@ header{
     background-image: url(../hero-div-code/images/developer.png),
                       url(../hero-div-code/images/header_bg.png);
 
-    background-position: left top, right bottom;
+    background-position: 20px 80px, right bottom;
     background-repeat: no-repeat;
 
     background-size: 80px auto, auto;
@@ -63,6 +63,7 @@ nav{
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .button1{
@@ -260,4 +261,59 @@ hr{
     font-size: 15px;
     color: #18181877;
     margin-bottom: 10px;
+}
+
+.hmm{
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    background-color: #FFF8F3;
+    gap: 117px;
+}
+
+.footer-info h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+    margin: 130px 0 20px 0;
+}
+
+.footer-info p{
+    font-size: 18px;
+    color: #757575;
+    line-height: 25px;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.social-icons{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 130px;
+}
+
+.footer-form h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+    margin: 130px 0 20px 0;
+}
+
+.footer-container form [type="text"],.footer-container form textarea{
+    width: 100%;
+    padding: 15px;
+    border:none;
+    border-radius: 5px;
+    margin: 20px 0 20px 0;
+}
+
+.footer-container form h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+    margin: 130px 0 20px 0;
 }
