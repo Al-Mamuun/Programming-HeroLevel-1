@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      .container {
+        display: flex;
+        gap: 20px;
+      }
+
+      .box {
+        border: 3px solid teal;
+        background-color: rgba(128, 128, 128, 0.11);
+        border-radius: 5px;
+        padding: 20px;
+      }
+
+      .container1{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .item {
+        border: 3px solid rgba(33, 238, 238, 0.74);
+        background-color: rgba(182, 104, 104, 0.603);
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px;
+      }
+
+      @media screen and (max-width: 576px) {
+        .container {
+          flex-direction: column;
+        }
+        .box {
+          background-color: aquamarine;
+        }
+
+        .item{
+            width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Flex Box</h1>
+      <div class="container">
+        <div class="box">
+          <h2>Box 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
+            fugiat eveniet, eos quia, eius maxime dignissimos alias a facere
+            possimus temporibus optio perspiciatis magnam harum nostrum modi
+            labore. Ipsam esse, inventore odit modi, deserunt provident quidem
+            dignissimos quam nihil sequi sunt beatae. Eligendi vel eos fugiat
+            suscipit blanditiis, sed dolores quisquam accusantium illum
+            quibusdam nisi facere sapiente harum delectus similique!
+          </p>
+        </div>
+        <div class="box">
+          <h2>Box 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            similique eaque, dignissimos, saepe mollitia distinctio odio quam
+            quo esse quidem ex ipsum maxime dolor, velit vel voluptate facilis.
+            Quibusdam dolores magni odio explicabo consequatur asperiores rem ut
+            labore maxime, fugit rerum porro aperiam dolore saepe maiores
+            nostrum aliquam delectus doloremque, nihil suscipit temporibus fuga
+            dolorem similique? Soluta quod praesentium sunt.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+        <h1>Flex Box Items</h1>
+      <div class="container1">
+        <div class="item">Box1</div>
+        <div class="item">Box2</div>
+        <div class="item">Box3</div>
+        <div class="item">Box4</div>
+        <div class="item">Box5</div>
+        <div class="item">Box6</div>
+        <div class="item">Box7</div>
+        <div class="item">Box8</div>
+        <div class="item">Box9</div>
+        <div class="item">Box10</div>
+        <div class="item">Box11</div>
+        <div class="item">Box12</div>
+        <div class="item">Box13</div>
+        <div class="item">Box14</div>
+        <div class="item">Box15</div>
+        <div class="item">Box16</div>
+        <div class="item">Box17</div>
+        <div class="item">Box18</div>
+        <div class="item">Box19</div>
+        <div class="item">Box20</div>
+      </div>
+    </section>
+  </body>
+</html>
