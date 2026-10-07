@@ -317,3 +317,194 @@ hr{
     color: #181818;
     margin: 130px 0 20px 0;
 }
+
+
+@media screen and (max-width: 576px) {
+
+    /* Header */
+    header {
+        padding-top: 20px;
+        background-image: none;
+    }
+
+    /* Navbar */
+    nav {
+        width: 90%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo h2 {
+        font-size: 35px;
+    }
+
+    .menu ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu ul li a {
+        font-size: 16px;
+    }
+
+    .menu .button {
+        padding: 10px 18px;
+        font-size: 16px;
+    }
+
+
+    /* Banner */
+    #banner {
+        margin: 70px 20px 0;
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    #banner .banner-content h2 {
+        font-size: 30px;
+    }
+
+    #banner .banner-content h1 {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    #banner .banner-content p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    #banner .banner-image img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .button,
+    .button1 {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .button1 {
+        margin-left: 5px;
+    }
+
+
+    /* About Me */
+    .container {
+        width: 90%;
+        margin: 50px auto;
+        padding: 50px 20px;
+    }
+
+    .container .about-me h2 {
+        font-size: 30px;
+    }
+
+    .container .about-me p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .container .info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    /* What I Do */
+    .about .about-contain h1 {
+        font-size: 30px;
+    }
+
+    .about .about-contain p {
+        width: 90%;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .card2 {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+        min-height: 300px;
+    }
+
+
+    /* Resume */
+    #resume .section-heading {
+        padding-top: 70px;
+    }
+
+    #resume .section-heading h1 {
+        font-size: 30px;
+        padding: 0 20px;
+    }
+
+    .resume-container {
+        width: 90%;
+        margin: 60px auto 20px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .education,
+    .experience {
+        width: 100%;
+        max-width: none;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .resume-card {
+        padding: 20px !important;
+    }
+
+    .hmm {
+        margin-bottom: 70px;
+    }
+
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 20px;
+    }
+
+    .footer-info h1,
+    .footer-container form h1 {
+        margin: 0 0 20px 0;
+        font-size: 30px;
+    }
+
+    .footer-info p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .social-icons {
+        margin-bottom: 20px;
+    }
+
+    .footer-container form {
+        width: 100%;
+    }
+
+    .footer-container form [type="text"],
+    .footer-container form textarea {
+        width: 100%;
+        margin: 10px 0 15px;
+    }
+
+}
