@@ -14,6 +14,15 @@
   display: flex;
 }
 
+main{
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+main>section{
+    margin-top: 130px;
+}
+
 /* dark 02 */
 .text-gray{
     color: #424242;
@@ -22,6 +31,10 @@
 /* dark 03 */
 .text-light-gray{
     color: #727272;
+}
+
+.text-orange{
+    color: rgb(255, 144, 14);
 }
 
 .bg-light{
@@ -85,6 +98,23 @@
     width: 75%;
     display: block;
     margin: 0 auto;
+}
+
+
+
+.team{
+    align-items: center;
+    margin-left: 200px;
+}
+
+.feature-container{
+    margin-left: 70px;
+}
+
+.team-pic-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
 }
 
 /* responsive media query  */
