@@ -107,8 +107,14 @@ main>section{
     margin-left: 200px;
 }
 
+.team-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
 .feature-container{
-    margin-left: 70px;
+    margin-left: 100px;
+    max-width: 530px;
 }
 
 .team-pic-container{
