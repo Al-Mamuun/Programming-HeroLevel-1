@@ -1,0 +1,34 @@
+* {
+  margin: 5px;
+  padding: 2px;
+}
+
+li {
+  color: darkblue;
+  font-weight: 600;
+}
+.hmm {
+  color: darkgreen;
+  font-weight: 400;
+  font-size: xx-large;
+}
+#yo {
+  color: darkred;
+  font-weight: 400;
+  font-size: xx-large;
+}
+.yellow, .bold {
+  color: yellow;
+  font-weight: 400;
+  font-size: xx-large;
+}
+
+#hu{
+    color: darkblue;
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+#Babu{
+    background-color: rgb(125, 134, 134);
+}

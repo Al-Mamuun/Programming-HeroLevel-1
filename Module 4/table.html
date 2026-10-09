@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="Styles/nav.css">
+    <style>
+        table{
+            border: 1px solid black;
+            
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px 20px;
+        }
+        tfoot td{
+            text-align: center;
+        }
+        img{
+            width: 70%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+        <header>
+        <nav>
+            <span>Navbar</span>
+            <ul>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="auto.html">Auto</a></li>
+                <li><a href="flex.html">Flex</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="table.html">Table</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>My Table</h1>
+            <table>
+                <caption>My Table</caption>
+                <thead>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>25</td>
+                        <td>New York</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>30</td>
+                        <td>Los Angeles</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>35</td>
+                        <td>Chicago</td>
+                    </tr>
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">This is the footer</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/10/Create-Tables-in-HTML.png" alt="Table Example">
+        </section>
+        <section>
+            <table>
+                <caption>Create Tables in HTML</caption>
+                <thead>
+                    <th>Column1</th>
+                    <th>Column2</th>
+                    <th>Column3</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Row 1 Cell 1</td>
+                        <td>Row 1 Cell 2</td>
+                        <td>Row 1 Cell 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2 Cell 2</td>
+                        <td>Row 2 Cell 3</td>
+                    </tr>
+                    <tr><td colspan="3">Row 3 Cell 1</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

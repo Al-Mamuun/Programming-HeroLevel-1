@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .box{
+            background-color: aquamarine;
+            border: 1px solid rgb(192, 11, 11);
+            width: 100px;
+            height: 100px;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .art{
+            background-color: antiquewhite;
+        }
+        .box2{
+            background-color: rgb(221, 124, 124);
+            width: 300px;
+            text-align: justify;
+            margin: 10px 200px;
+            padding: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="Styles/nav.css">
+</head>
+<body>
+        <header>
+        <nav>
+            <span>Navbar</span>
+            <ul>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="auto.html">Auto</a></li>
+                <li><a href="flex.html">Flex</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="table.html">Table</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <!-- .box{$}*6 -->
+             <div class="box">1</div>
+             <div class="box">2</div>
+             <div class="box">3</div>
+             <div class="box">4</div>
+             <div class="box">5</div>
+             <div class="box">6</div>
+        </div>
+    </section>
+    <section>
+        <div class="art">
+        <div class="box2">
+            <h2>My Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat quisquam nisi modi deleniti labore magnam error tempore adipisci non quae nulla, recusandae, porro dolorem! Quo distinctio omnis repellat. Mollitia.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum iste architecto impedit dicta sunt sed esse, officiis sit illo cumque eveniet assumenda tempore ad ipsum magnam pariatur sint, dolores veritatis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat quisquam nisi modi deleniti labore magnam error tempore adipisci non quae nulla, recusandae, porro dolorem! Quo distinctio omnis repellat. Mollitia.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum iste architecto impedit dicta sunt sed esse, officiis sit illo cumque eveniet assumenda tempore ad ipsum magnam pariatur sint, dolores veritatis?</p></div>
+        </div>
+    </section>
+</body>
+</html>

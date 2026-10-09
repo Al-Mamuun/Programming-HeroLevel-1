@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+}
+.container {
+  background-color: aquamarine;
+  border-left: 5px solid red;
+  /* margin: 10px 50px; top and bottom margin of 10px, left and right margin of 50px */
+  /* margin: 10px 40px 100px; top margin of 10px, right margin of 40px, bottom margin of 100px, left margin of 40px */
+  margin: 10px 20px 30px 40px; /* top margin of 10px, right margin of 20px, bottom margin of 30px, left margin of 40px */
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.new{
+  background-color: burlywood;
+  margin: 10px;
+  padding: 5px;
+  text-align: justify;
+  border: 5px solid green;
+  box-shadow: 5px 5px 5px gray;
+}
+.hu{
+    color: red;
+    font-size: 20px;
+    border: 3px solid purple;
+    height: 50px;
+    width: 50%;
+    display: inline-block;
+}
+
+.yep{
+    background-image: url('../images/home.png');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: right;
+}
+
+input[type="text"]{
+    color: red;
+}
+
+input[type="email"]{
+    color: blue;
+}

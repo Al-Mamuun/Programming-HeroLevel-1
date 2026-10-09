@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff8fb;
+
+    background-image:
+        linear-gradient(rgba(255, 105, 180, 0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 105, 180, 0.12) 1px, transparent 1px);
+
+    background-size: 50px 50px;
+}
+
+.isometra-regular {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.container-nav{
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 7px 15px 7px 19px;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(228, 190, 120);
+    border-radius: 30px;
+    background-color: white;
+}
+
+.container-nav .logo{
+    /* color: lightpink; */
+     background: linear-gradient(
+        90deg,
+        #ff8fab,
+        #ff4d8d,
+        #e83e8c,
+        #ffb6c1
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 15px;
+}
+
+.container-nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.container-nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.container-nav .link .btn {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.container-nav .link .btn:hover{
+    border: 1px solid lightpink;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: rgb(211, 173, 179,0.3);
+    color: white;
+    
+}
+
+.box{
+    background-color: rgb(211, 173, 179,0.3);
+    border: 2px solid lightpink;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.container-nav .link .btn1:hover{
+    background-color:white;
+}

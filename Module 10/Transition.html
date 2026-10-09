@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+        .Item,.inner{
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .inner{
+            background-color: teal;
+            transition: all 0.3s ease;
+        }
+        
+        .inner:hover{
+            transform: scale(1.5)rotate(45deg)translateX(30px);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="inner">Inner-1</div>
+        <div class="inner">Inner-2</div>
+        <div class="inner">Inner-3</div>
+    </div>
+</body>
+</html>
