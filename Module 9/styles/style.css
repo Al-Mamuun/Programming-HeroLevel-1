@@ -49,6 +49,7 @@ main > section {
   font-size: 1.25rem;
 }
 
+
 /* header styles */
 
 /* navbar related styles  */
@@ -92,6 +93,11 @@ main > section {
   font-size: 4rem;
 }
 
+.feature-title {
+  font-weight: 700;
+  font-size: 45px;
+}
+
 .banner-image {
   width: 75%;
   display: block;
@@ -119,14 +125,15 @@ main > section {
   gap: 24px;
 }
 
-.fact-head {
+.fact-head,.fact-container {
   max-width: 542px;
+  margin-left: 240px;
 }
 
 .fact-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 40px;
   margin-top: 80px;
 }
 
@@ -165,7 +172,59 @@ main > section {
   filter: grayscale(100%);
 }
 
-/* responsive media query  */
+/* feature card styles */
+
+.feature{
+  display: flex;
+  gap: 54px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.feature-container{
+  
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  gap: 24px;
+}
+
+.feature-card {
+  box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.feature-card h4 {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+}
+
+#experience-badge{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 60px;
+  margin-top: -150px;
+}
+#badge{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#footer{
+  margin: 100px 240px;
+  padding: 40px;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* responsive media query 
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-link,
@@ -233,4 +292,451 @@ main > section {
     max-width: 160px;
     margin: 0 auto;
   }
+} */
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+   Mobile, Tablet, Laptop, Desktop
+================================ */
+
+/* Prevent horizontal overflow */
+* {
+  box-sizing: border-box;
 }
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Large Desktop: 1200px and above */
+@media screen and (min-width: 1200px) {
+  .navbar,
+  .banner {
+    width: 90%;
+  }
+
+  .team {
+    margin-left: 0;
+    justify-content: center;
+    gap: 70px;
+  }
+
+  .team-pic-container img {
+    width: 100%;
+    display: block;
+  }
+
+  .feature {
+    gap: 50px;
+  }
+
+  .feature > .feature-container {
+    flex: 1;
+    min-width: 0;
+    margin-left: 0;
+  }
+
+  .feature-image {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+  }
+
+  .feature-image img {
+    width: 100%;
+    display: block;
+  }
+
+  .fact-head,
+  .fact-container {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .fact-head {
+    padding: 0 20px;
+  }
+
+  .fact-container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .fact-card {
+    width: 100%;
+    min-width: 0;
+    padding: 15px;
+  }
+
+  .image-companies {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: center;
+    justify-items: center;
+  }
+
+  #footer {
+    margin: 100px auto;
+    width: 80%;
+  }
+}
+
+/* Laptop and small desktop: 577px–1199px */
+@media screen and (min-width: 577px) and (max-width: 1199px) {
+  .navbar,
+  .banner {
+    width: 92%;
+  }
+
+  .brand {
+    font-size: 2rem;
+  }
+
+  .nav-item {
+    margin-right: 15px;
+  }
+
+  .team {
+    margin: 0 auto;
+    padding: 0 25px;
+    gap: 35px;
+  }
+
+  .team-pic-container {
+    flex: 1;
+    min-width: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  .team-pic-container img {
+    width: 100%;
+    display: block;
+  }
+
+  .team .feature-container {
+    flex: 1;
+    min-width: 0;
+    margin-left: 0;
+  }
+
+  .team-title {
+    font-size: 2rem;
+  }
+
+  .feature {
+    align-items: flex-start;
+    gap: 25px;
+    padding: 0 25px;
+  }
+
+  .feature > .feature-container {
+    flex: 1;
+    min-width: 0;
+    margin-left: 0;
+  }
+
+  .feature-title {
+    font-size: 2.2rem;
+  }
+
+  .feature-image {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+    padding-bottom: 65px;
+  }
+
+  .feature-image img {
+    width: 100%;
+    display: block;
+  }
+
+  #experience-badge {
+    position: absolute;
+    left: -25px;
+    bottom: 0;
+    margin: 0;
+    padding: 20px 25px;
+    font-size: 1.1rem;
+  }
+
+  #badge {
+    font-size: 2rem;
+  }
+
+  .fact-head,
+  .fact-container {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .fact-head {
+    padding: 0 25px;
+  }
+
+  .fact-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    padding: 0 25px;
+  }
+
+  .fact-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .sponsor-info {
+    padding: 0 20px;
+  }
+
+  .image-companies {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    padding: 0 20px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .image-companies img {
+    width: 90%;
+  }
+
+  #footer {
+    width: 90%;
+    margin: 80px auto;
+  }
+}
+
+/* Mobile: 576px and below */
+@media screen and (max-width: 576px) {
+  main > section {
+    margin-top: 65px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 10px;
+  }
+
+  .brand {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .navbar .nav-link {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    gap: 12px;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .banner {
+    padding: 15px;
+  }
+
+  .banner-content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .banner-title {
+    font-size: 2.2rem;
+  }
+
+  .banner-content p,
+  .team-desc,
+  .feature > .feature-container > p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .btn-primary {
+    padding: 13px 18px;
+    font-size: 1rem;
+  }
+
+  .banner-image {
+    width: 100%;
+  }
+
+  /* Team section */
+  .team {
+    flex-direction: column;
+    margin: 0;
+    padding: 0 15px;
+    gap: 30px;
+  }
+
+  .team-pic-container {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .team-pic-container img {
+    width: 100%;
+    display: block;
+  }
+
+  .team .feature-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .team-title {
+    font-size: 2rem;
+  }
+
+  /* Feature section */
+  .feature {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+    padding: 0 15px;
+  }
+
+  .feature > .feature-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .feature-title {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .feature-card {
+    padding: 15px;
+  }
+
+  .feature-card h4 {
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+
+  .feature-card p {
+    line-height: 1.6;
+    margin-bottom: 5px;
+  }
+
+  .feature-image {
+    width: 100%;
+    position: relative;
+    padding-bottom: 55px;
+  }
+
+  .feature-image img {
+    width: 100%;
+    display: block;
+  }
+
+  #experience-badge {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    margin: 0;
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+
+  #badge {
+    font-size: 1.7rem;
+  }
+
+  /* Facts section */
+  .fact-head,
+  .fact-container {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .fact-head {
+    padding: 0 15px;
+  }
+
+  .fact-head .brand {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .fact-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 35px;
+    padding: 0 15px;
+  }
+
+  .fact-card {
+    width: 100%;
+    height: 180px;
+    min-width: 0;
+    padding: 10px;
+  }
+
+  .fact-icon {
+    max-width: 45px;
+  }
+
+  .fact-card h4,
+  .fact-card h5 {
+    font-size: 0.95rem;
+    overflow-wrap: anywhere;
+  }
+
+  /* Sponsors */
+  .sponsor-info {
+    padding: 0 15px;
+    margin-bottom: 25px;
+  }
+
+  .sponsor-info .banner-title {
+    font-size: 2rem;
+  }
+
+  .image-companies {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 15px;
+    padding: 0 20px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .image-companies img {
+    width: 100%;
+    max-width: 130px;
+  }
+
+  .image-companies img:last-child {
+    grid-column: 1 / -1;
+  }
+
+  /* Footer */
+  #footer {
+    width: calc(100% - 30px);
+    margin: 60px auto 25px;
+    padding: 20px 12px;
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+}
+
