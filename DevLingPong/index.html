@@ -1,146 +1,554 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dev Ling Pong | Software Development Company</title>
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Dev Ling Pong builds innovative, scalable software solutions for a sustainable future.">
 
-    <!-- Tailwind CSS Browser CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" />
-    
+  <title>Dev Ling Pong | Software Development Company</title>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
 
-  <body>
-    <!-- ================= HEADER / NAVBAR ================= -->
-    <header class="site-header">
-      <nav class="nav">
-        <!-- Brand -->
-        <div class="brand flex items-center gap-2">
-          <img src="media/Brand mark.png" alt="Dev Ling Pong Logo" />
-          <h2>Dev Ling Pong</h2>
-        </div>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
-        <!-- Navigation Links -->
-        <div class="nav-links">
-          <ul class="flex items-center gap-5">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#career">Career</a></li>
-            <li><a href="#case-study">Case Study</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </div>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
 
-        <!-- Navbar Actions -->
-        <div class="nav-icons flex items-center gap-4">
-          <select name="language" id="language" aria-label="Select language">
-            <option value="en">EN</option>
-            <option value="bn">BN</option>
-          </select>
+<body>
 
-          <a href="#contact" class="nav-button flex items-center gap-2">Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </nav>
-    </header>
+  <!-- ================= HEADER ================= -->
 
-    <!-- ================= MAIN ================= -->
-    <main>
-      <!-- ================= HERO SECTION ================= -->
-      <section class="hero-section">
-        <div class="main-container">
+  <header class="site-header">
+    <nav class="nav container">
 
-          <!-- Left Image -->
-          <div class="container-img left-img">
-            <img
-              src="media/Collaboration.png"
-              alt="Team collaborating in an office"
-            />
+      <a href="#" class="brand">
+        <img src="media/Brand mark.png" alt="Dev Ling Pong logo">
+        <span>Dev Ling Pong<span class="brand-dot">.</span></span>
+      </a>
 
-          
-          </div>
-
-          <!-- Center Content -->
-          <div class="hero-content">
-            <div class="circle-btn">
-              <span class="circle"></span>
-              <h4>SOFTWARE DEVELOPMENT COMPANY</h4>
-            </div>
-
-            <h1>
-              We Create Software for a
-              <span id="hmm">Sustainable Future</span>
-            </h1>
-
-            <p>
-              From startups to enterprises, we design, develop, and scale
-              web &amp; mobile solutions that drive real results.
-            </p>
-
-            <div class="container-btn">
-              <a href="#contact" class="primary-btn">
-                Get Started
-                <span class="button-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-              </a>
-
-              <a href="#company-deck" class="secondary-btn">
-                Company Deck
-                <span class="button-icon"><i class="fa-solid fa-download"></i></span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Right Image -->
-          <div class="container-img right-img">
-            <img
-              src="media/Collaboration.png"
-              alt="Team planning a software project"
-            />
-
-            <span class="image-ring"></span>
-          </div>
-
-        </div>
-      </section>
-
-      
-      <div class="headline">
-        <hr>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#case-study">Case Study</a></li>
+        </ul>
       </div>
 
-      <section class="card">
-        
-        <div class="main-container-card">
-          <h2>XX++</h2>
-          <p>Project Complete</p>
-        </div>
-        <div class="main-container-card">
-          <h2>XX++</h2>
-          <p>Clients Served</p>
-        </div>
-        <div class="main-container-card">
-          <h2>XX++</h2>
-          <p>Team Members</p>
-        </div>
-        <div class="main-container-card">
-          <h2>XX++</h2>
-          <p>Years Experience</p>
-        </div>
-      </section>
+      <div class="nav-icons">
+        <select name="language" id="language" aria-label="Select language">
+          <option value="en">EN</option>
+          <option value="bn">BN</option>
+        </select>
 
-      <!-- Other sections can be added here -->
-      <section id="services"></section>
-      <section id="about"></section>
-      <section id="career"></section>
-      <section id="case-study"></section>
-      <section id="contact"></section>
-    </main>
+        <a href="#contact" class="nav-button">
+          Let's Talk
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
 
-    <!-- ================= FOOTER ================= -->
-    <footer></footer>
-  </body>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero-section">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="main-container container">
+
+        <!-- Left Image -->
+        <div class="container-img left-img">
+          <img
+            src="media/Collaboration.png"
+            alt="Our team collaborating on innovative ideas"
+          >
+
+          <div class="floating-card floating-left">
+            <span class="floating-icon">
+              <i class="fa-solid fa-code"></i>
+            </span>
+            <div>
+              <strong>Smart Solutions</strong>
+              <small>Built for tomorrow</small>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Center Content -->
+        <div class="hero-content">
+
+          <div class="circle-btn">
+            <span class="circle"></span>
+            <h4>SOFTWARE DEVELOPMENT COMPANY</h4>
+          </div>
+
+          <h1>
+            We Create Software for a
+            <span class="highlight-text">Sustainable Future.</span>
+          </h1>
+
+          <p>
+            From startups to enterprises, we design, develop, and scale
+            web and mobile solutions that solve real problems and drive
+            meaningful results.
+          </p>
+
+          <div class="container-btn">
+            <a href="#contact" class="primary-btn">
+              Get Started
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <a href="#case-study" class="secondary-btn">
+              Explore Our Work
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <span class="trust-line"></span>
+            <span>Innovation meets execution</span>
+          </div>
+
+        </div>
+
+
+        <!-- Right Image -->
+        <div class="container-img right-img">
+          <img
+            src="media/Collaboration.png"
+            alt="A team planning a software development project"
+          >
+
+          <span class="image-ring"></span>
+
+          <div class="floating-card floating-right">
+            <span class="status-dot"></span>
+            <div>
+              <strong>Future Ready</strong>
+              <small>Technology that scales</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= STATS SECTION ================= -->
+
+    <section class="stats-section" aria-label="Company statistics">
+      <div class="container">
+
+        <div class="section-divider">
+          <span></span>
+          <p>OUR IMPACT IN NUMBERS</p>
+          <span></span>
+        </div>
+
+        <div class="card">
+
+          <article class="main-container-card">
+            <div class="stat-top">
+              <span class="stat-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </span>
+              <i class="fa-solid fa-arrow-up-right-from-square stat-arrow"></i>
+            </div>
+            <h2>XX<span>+</span></h2>
+            <p>Projects Completed</p>
+          </article>
+
+          <article class="main-container-card">
+            <div class="stat-top">
+              <span class="stat-icon">
+                <i class="fa-solid fa-handshake"></i>
+              </span>
+              <i class="fa-solid fa-arrow-up-right-from-square stat-arrow"></i>
+            </div>
+            <h2>XX<span>+</span></h2>
+            <p>Clients Served</p>
+          </article>
+
+          <article class="main-container-card">
+            <div class="stat-top">
+              <span class="stat-icon">
+                <i class="fa-solid fa-users"></i>
+              </span>
+              <i class="fa-solid fa-arrow-up-right-from-square stat-arrow"></i>
+            </div>
+            <h2>XX<span>+</span></h2>
+            <p>Team Members</p>
+          </article>
+
+          <article class="main-container-card">
+            <div class="stat-top">
+              <span class="stat-icon">
+                <i class="fa-solid fa-chart-line"></i>
+              </span>
+              <i class="fa-solid fa-arrow-up-right-from-square stat-arrow"></i>
+            </div>
+            <h2>XX<span>+</span></h2>
+            <p>Years of Experience</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="content-section" id="services">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">
+            <span class="circle"></span>
+            WHAT WE DO
+          </span>
+
+          <h2>
+            Technology that moves
+            <span class="highlight-text">you forward.</span>
+          </h2>
+
+          <p>
+            We turn complex challenges into simple, scalable digital
+            experiences that help businesses grow.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <span class="service-icon">
+              <i class="fa-solid fa-code"></i>
+            </span>
+            <h3>Web Development</h3>
+            <p>
+              Fast, responsive and reliable websites designed around
+              your business goals.
+            </p>
+            <a href="#contact" class="text-link">
+              Let's build <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </span>
+            <h3>Mobile Solutions</h3>
+            <p>
+              Intuitive mobile experiences that connect your business
+              with customers anywhere.
+            </p>
+            <a href="#contact" class="text-link">
+              Let's build <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon">
+              <i class="fa-solid fa-layer-group"></i>
+            </span>
+            <h3>Custom Software</h3>
+            <p>
+              Purpose-built software that streamlines workflows
+              and supports long-term growth.
+            </p>
+            <a href="#contact" class="text-link">
+              Let's build <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about-section content-section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-visual">
+          <img
+            src="media/Collaboration.png"
+            alt="Collaborative software development team"
+            loading="lazy"
+          >
+
+          <div class="about-badge">
+            <i class="fa-solid fa-lightbulb"></i>
+            <span>Ideas into impact</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="eyebrow">
+            <span class="circle"></span>
+            ABOUT OUR COMPANY
+          </span>
+
+          <h2>
+            We build with purpose.
+            <span class="highlight-text">We grow with you.</span>
+          </h2>
+
+          <p>
+            At Dev Ling Pong, we believe technology should do more
+            than work. It should create opportunities, improve
+            experiences and help businesses move forward.
+          </p>
+
+          <ul class="feature-list">
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Solutions tailored to your goals
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Focus on quality and user experience
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Built for long-term scalability
+            </li>
+          </ul>
+
+          <a href="#contact" class="primary-btn">
+            Know More
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= CAREER ================= -->
+
+    <section class="career-section content-section" id="career">
+      <div class="container career-box">
+
+        <div>
+          <span class="eyebrow">
+            <span class="circle"></span>
+            GROW WITH US
+          </span>
+
+          <h2>
+            Great ideas start with
+            <span class="highlight-text">great people.</span>
+          </h2>
+
+          <p>
+            Love solving problems and building meaningful technology?
+            Let's create something remarkable together.
+          </p>
+        </div>
+
+        <a href="#contact" class="primary-btn">
+          Join Our Team
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- ================= CASE STUDY ================= -->
+
+    <section class="content-section" id="case-study">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">
+            <span class="circle"></span>
+            OUR WORK
+          </span>
+
+          <h2>
+            Turning ideas into
+            <span class="highlight-text">real solutions.</span>
+          </h2>
+
+          <p>
+            Every project starts with a challenge and ends with an
+            opportunity to make something better.
+          </p>
+        </div>
+
+        <article class="case-card">
+          <div class="case-visual">
+            <img
+              src="media/Collaboration.png"
+              alt="Software project collaboration"
+              loading="lazy"
+            >
+            <span class="case-label">FEATURED PROJECT</span>
+          </div>
+
+          <div class="case-content">
+            <span class="eyebrow">DIGITAL SOLUTIONS</span>
+            <h3>Built around your next big idea.</h3>
+            <p>
+              Have a business challenge that needs a digital solution?
+              Let's discuss your requirements and explore what's possible.
+            </p>
+
+            <a href="#contact" class="text-link">
+              Discuss a project
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact-section content-section" id="contact">
+      <div class="container contact-container">
+
+        <div class="contact-info">
+          <span class="eyebrow">
+            <span class="circle"></span>
+            GET IN TOUCH
+          </span>
+
+          <h2>
+            Have an idea?
+            <span class="highlight-text">Let's talk.</span>
+          </h2>
+
+          <p>
+            Tell us what you're planning. We'd love to hear about
+            your project and explore how we can help.
+          </p>
+
+          <div class="contact-note">
+            <span class="contact-note-icon">
+              <i class="fa-regular fa-paper-plane"></i>
+            </span>
+            <div>
+              <strong>Let's create something meaningful.</strong>
+              <p>Your next step starts with a conversation.</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <h3>Send us a message</h3>
+
+          <label for="name">Your name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            autocomplete="name"
+            required
+          >
+
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          >
+
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="How can we help?"
+            required
+          >
+
+          <label for="message">Your message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Tell us about your project..."
+            required
+          ></textarea>
+
+          <button type="submit" class="primary-btn">
+            Send Message
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+          <p class="form-note">
+            Please connect this form to a backend or form service
+            to receive messages.
+          </p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+
+      <a href="#" class="brand footer-brand">
+        <img src="media/Brand mark.png" alt="">
+        <span>Dev Ling Pong<span class="brand-dot">.</span></span>
+      </a>
+
+      <p>
+        Building meaningful digital experiences for a sustainable future.
+      </p>
+
+      <a href="#contact" class="footer-link">
+        Start a conversation
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>
+        &copy; 2026 Dev Ling Pong. All rights reserved.
+      </p>
+
+      <a href="#">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+</body>
 </html>
