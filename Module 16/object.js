@@ -17,3 +17,9 @@ const person = {
 }
 
 console.log(person)
+
+
+let place = "Dhaka";
+place[0] = "C";
+
+console.log(place)
