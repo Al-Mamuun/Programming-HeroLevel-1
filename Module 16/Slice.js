@@ -31,3 +31,5 @@ console.log(firstName + " " + lastName)
 console.log(firstName.concat(' ').concat(lastName))
 
 console.log(lastName.includes("H"))
+
+console.log(firstName.concat("|").concat(lastName))
