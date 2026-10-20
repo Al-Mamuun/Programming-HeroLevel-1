@@ -22,3 +22,6 @@ console.log(key)
 
 const value = Object.values(student)
 console.log(value)
+
+delete student.unique.result;
+console.log(student)
