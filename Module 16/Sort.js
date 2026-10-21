@@ -19,5 +19,7 @@ const sortedNumbersDesc = numbers.sort((a, b) => b - a);
 console.log("Sorted Numbers (Descending):", sortedNumbersDesc);
 
 
-const sort_Des = numbers.sort(function (a, b) { return b - a });
+const sort_Des = [...numbers].sort(function (a, b) { return b - a });
+const sort_Asc = [...numbers].sort(function (a, b) { return a - b });
+console.log(sort_Asc)
 console.log(sort_Des)
