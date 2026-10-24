@@ -1,0 +1,17 @@
+main h1{
+    background-color: aqua;
+}
+
+li{
+    color: gold;
+    font-size: larger;
+}
+
+#kopp{
+    background-color: white;
+    color: green;
+}
+
+.song p span{
+    color: red;
+}
