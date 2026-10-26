@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Event</title>
+    <style>
+      .comment {
+        font-size: larger;
+        border: 1px solid red;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 20px;
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Create New Event</h1>
+      <div id="comment-box">
+        <h1>New Event</h1>
+        <p class="comment">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quia
+          autem tempora quos magni quae ullam iure repellendus perferendis
+          voluptate laboriosam vel facere rem nisi beatae aliquam molestias
+          voluptatum, debitis officiis maiores eaque impedit et mollitia
+          ratione? Accusamus, ab? Tenetur asperiores ex velit quia enim id.
+          Dignissimos ex possimus ad.
+        </p>
+        <p class="comment">
+          Quas, blanditiis quam? Laborum fuga, facilis sit quos voluptates vero
+          eaque culpa ad. Minima nisi quas voluptatum quod, modi recusandae
+          expedita aliquam quis provident. Non soluta itaque nulla quasi,
+          officia unde possimus eveniet iure omnis quo. Vel quos et facilis enim
+          assumenda harum, eius recusandae dolorem atque laboriosam expedita ad.
+        </p>
+        <p class="comment">
+          Explicabo, porro eaque repudiandae quos itaque nulla libero
+          consectetur consequatur perspiciatis quas, numquam cupiditate eveniet
+          sit officia, sed mollitia quod excepturi incidunt quae neque?
+          Architecto perspiciatis asperiores maiores nulla eveniet, fugit
+          reprehenderit expedita veritatis, possimus assumenda iste voluptatem
+          nihil libero aut eaque provident, nemo quis eius error. Cumque,
+          suscipit corrupti?
+        </p>
+      </div>
+      <br /><br />
+      <textarea name="" id="comment-textarea" cols="60" rows="10"></textarea
+      ><br />
+      <button id="post-btn">Post Comment</button>
+    </main>
+
+    <script>
+      const postBtn = document
+        .getElementById("post-btn")
+        .addEventListener("click", function () {
+          const commentTextarea = document.getElementById("comment-textarea");
+          const newComment = commentTextarea.value;
+          const newCommentElement = document.createElement("p");
+          const commentBox = document.getElementById("comment-box");
+          newCommentElement.classList.add("comment");
+          newCommentElement.innerText = newComment;
+          commentBox.appendChild(newCommentElement);
+          commentTextarea.value = "";
+        });
+    </script>
+  </body>
+</html>
