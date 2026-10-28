@@ -50,6 +50,8 @@
       <textarea name="" id="comment-textarea" cols="60" rows="10"></textarea
       ><br />
       <button id="post-btn">Post Comment</button>
+
+      <button id="clear-btn">Clear</button>
     </main>
 
     <script>
@@ -62,6 +64,16 @@
             newComment.innerText = newText;
             commentBox.appendChild(newComment);
             commentArea.value = "";
+        })
+
+        // const clearBtn = document.getElementById("clear-btn").addEventListener("mouseover",function(){
+        //     console.log("Mamun Boss")
+        // })
+        // const clearBtn = document.getElementById("clear-btn").addEventListener("mouseenter",function(){
+        //     console.log("Mamun Boss")
+        // })
+        const clearBtn = document.getElementById("clear-btn").addEventListener("mouseout",function(){
+            console.log("Mamun Boss")
         })
     </script>
 </body>
